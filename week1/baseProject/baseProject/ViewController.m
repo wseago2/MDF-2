@@ -11,6 +11,7 @@
 #import <Social/Social.h>
 #import "CustomCell.h"
 #import "DetailViewController.h"
+#import "UserDetailsViewController.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,7 @@
 
 @implementation ViewController
 
+@synthesize tweetDictionary;
 @synthesize currentTweet;
 
 - (void)viewDidLoad
@@ -42,7 +44,6 @@
                     NSArray *twitterAccounts = [accountStore accountsWithAccountType:accountType];
                     if (twitterAccounts != nil)
                     {
-//                        NSLog(@"%@", [twitterAccounts description]);
                         // set the first account in the twitterAccounts array to currentAccount
                         ACAccount *currentAccount = [twitterAccounts objectAtIndex:0];
                         if (currentAccount != nil)
@@ -67,12 +68,10 @@
                                          if (twitterFeed != nil)
                                          {
                                              [myTableView reloadData];
-//                                             NSLog(@"%@", [twitterFeed description]);
                                          }
                                      }
                                  }];
                             }
-                            
                         }
                     }
                 }
@@ -86,6 +85,21 @@
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    activityIndicator.frame = CGRectMake(0.0, 0.0, 40.0, 40.0);
+    activityIndicator.center = self.view.center;
+    [self.view addSubview:activityIndicator];
+    [activityIndicator startAnimating];
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -110,10 +124,7 @@
     CustomCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TwitterCell"];
     if (cell != nil)
     {
-        NSDictionary *tweetDictionary = [twitterFeed objectAtIndex:indexPath.row];
-        
-        NSLog(@"Here is the tweetDictionary");
-        NSLog(@"%@", tweetDictionary);
+        tweetDictionary = [twitterFeed objectAtIndex:indexPath.row];
         
         NSString *tweetImage = [[tweetDictionary objectForKey:@"user"] objectForKey:@"profile_image_url"];
         
@@ -124,6 +135,8 @@
         cell.timeDate = [tweetDictionary valueForKey:@"created_at"];
         cell.username = [[tweetDictionary valueForKey:@"user"] objectForKey:@"name"];
         cell.imageView.image = [UIImage imageWithData:data];
+        
+        [activityIndicator stopAnimating];
 
         [cell refreshCell];
         
@@ -134,6 +147,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+//    [activityIndicator stopAnimating];
+    
     DetailViewController *viewController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
     
     currentTweet = [twitterFeed objectAtIndex:indexPath.row];
@@ -141,10 +156,6 @@
     viewController.tweetDictionary = currentTweet;
     
     [self presentViewController:viewController animated:YES completion:nil];
-    
-//    NSDictionary *tweetDictionary = [twitterFeed objectAtIndex:indexPath.row];
-    
-//    NSLog(@"%@", [tweetDictionary description]);
 }
 
 -(IBAction)onPost:(id)sender
@@ -158,4 +169,31 @@
     }
 }
 
+-(IBAction)onRefresh:(id)sender
+{
+    [self alert];
+    [myTableView reloadData];
+}
+
+#pragma alert method
+
+// http://iosdevelopertips.com/user-interface/uialertview-without-buttons-please-wait-dialog.html
+
+-(void)alert
+{
+    UIAlertView *alert;
+    alert = [[UIAlertView alloc] initWithTitle:@"Gathering Tweets..." message:nil delegate:self cancelButtonTitle:nil otherButtonTitles: nil];
+    [alert show];
+    
+    UIActivityIndicatorView *indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    
+    indicator.center = CGPointMake(alert.bounds.size.width / 2, alert.bounds.size.height - 50);
+    [indicator startAnimating];
+    [alert addSubview:indicator];
+    
+    [alert dismissWithClickedButtonIndex:0 animated:YES];
+}
+
+
 @end
+

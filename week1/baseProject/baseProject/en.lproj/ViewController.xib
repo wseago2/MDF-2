@@ -32,6 +32,9 @@
                     <state key="normal" title="Refresh">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="onRefresh:" destination="-1" eventType="touchUpInside" id="bNb-eM-F3L"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FTf-iD-Pkz">
                     <rect key="frame" x="234" y="12" width="64" height="30"/>

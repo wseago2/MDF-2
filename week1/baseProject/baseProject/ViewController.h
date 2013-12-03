@@ -8,16 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UIAlertViewDelegate>
 {
     IBOutlet UITableView *myTableView;
     
     NSArray *twitterFeed;
+    
+    UIActivityIndicatorView *activityIndicator;
+    
 }
 
 @property (nonatomic, strong) NSDictionary *currentTweet;
 @property (nonatomic, strong) NSDictionary *tweetDictionary;
 
 -(IBAction)onPost:(id)sender;
+-(IBAction)onRefresh:(id)sender;
 
 @end
