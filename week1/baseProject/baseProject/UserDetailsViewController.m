@@ -35,7 +35,8 @@
 //    NSLog(@"%@", tweetDictionary);
     
     NSString *detailsName = [[tweetDictionary valueForKey:@"user"] objectForKey:@"name"];
-    NSString *detailsDescription = [tweetDictionary valueForKey:@"description"];
+    NSString *detailsDescription = [[tweetDictionary valueForKey:@"user"] objectForKey:@"description"];
+//    NSString *detailsDescription = [tweetDictionary valueForKey:@"description"];
     NSString *detailsQtyFollowers = [[NSString alloc] initWithFormat:@"%@",[[tweetDictionary valueForKey:@"user"] objectForKey:@"followers_count" ]];
     NSString *detailsQtyFriends = [[NSString alloc] initWithFormat:@"%@",[[tweetDictionary valueForKey:@"user"] objectForKey:@"friends_count" ]];
     

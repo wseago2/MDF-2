@@ -13,6 +13,8 @@
 		3F2C52F4184BF5EC008CE95B /* TwitterCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F2C52F3184BF5EC008CE95B /* TwitterCellView.xib */; };
 		3F2C52FA184CB543008CE95B /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2C52F8184CB543008CE95B /* DetailViewController.m */; };
 		3F2C52FB184CB543008CE95B /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F2C52F9184CB543008CE95B /* DetailViewController.xib */; };
+		3F2C52FF184CE472008CE95B /* UserDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2C52FD184CE472008CE95B /* UserDetailsViewController.m */; };
+		3F2C5300184CE472008CE95B /* UserDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F2C52FE184CE472008CE95B /* UserDetailsViewController.xib */; };
 		A21C4CDB17D7878600C6C3BB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A21C4CDA17D7878600C6C3BB /* UIKit.framework */; };
 		A21C4CDD17D7878600C6C3BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A21C4CDC17D7878600C6C3BB /* Foundation.framework */; };
 		A21C4CDF17D7878600C6C3BB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A21C4CDE17D7878600C6C3BB /* CoreGraphics.framework */; };
@@ -35,6 +37,9 @@
 		3F2C52F7184CB543008CE95B /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		3F2C52F8184CB543008CE95B /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		3F2C52F9184CB543008CE95B /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		3F2C52FC184CE472008CE95B /* UserDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDetailsViewController.h; sourceTree = "<group>"; };
+		3F2C52FD184CE472008CE95B /* UserDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDetailsViewController.m; sourceTree = "<group>"; };
+		3F2C52FE184CE472008CE95B /* UserDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserDetailsViewController.xib; sourceTree = "<group>"; };
 		A21C4CD717D7878600C6C3BB /* baseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = baseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A21C4CDA17D7878600C6C3BB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A21C4CDC17D7878600C6C3BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -113,6 +118,9 @@
 				3F2C52F7184CB543008CE95B /* DetailViewController.h */,
 				3F2C52F8184CB543008CE95B /* DetailViewController.m */,
 				3F2C52F9184CB543008CE95B /* DetailViewController.xib */,
+				3F2C52FC184CE472008CE95B /* UserDetailsViewController.h */,
+				3F2C52FD184CE472008CE95B /* UserDetailsViewController.m */,
+				3F2C52FE184CE472008CE95B /* UserDetailsViewController.xib */,
 			);
 			path = baseProject;
 			sourceTree = "<group>";
@@ -184,6 +192,7 @@
 			files = (
 				A21C4CE517D7878600C6C3BB /* InfoPlist.strings in Resources */,
 				A21C4CED17D7878600C6C3BB /* Default.png in Resources */,
+				3F2C5300184CE472008CE95B /* UserDetailsViewController.xib in Resources */,
 				3F2C52F4184BF5EC008CE95B /* TwitterCellView.xib in Resources */,
 				3F2C52FB184CB543008CE95B /* DetailViewController.xib in Resources */,
 				A21C4CEF17D7878600C6C3BB /* Default@2x.png in Resources */,
@@ -203,6 +212,7 @@
 				A21C4CE717D7878600C6C3BB /* main.m in Sources */,
 				A21C4CEB17D7878600C6C3BB /* AppDelegate.m in Sources */,
 				3F2C52F2184BF58A008CE95B /* CustomCell.m in Sources */,
+				3F2C52FF184CE472008CE95B /* UserDetailsViewController.m in Sources */,
 				A21C4CF417D7878600C6C3BB /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,6 +302,7 @@
 				GCC_PREFIX_HEADER = "baseProject/baseProject-Prefix.pch";
 				INFOPLIST_FILE = "baseProject/baseProject-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "371F3BC8-D020-4A28-B646-B15DD8E013D6";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -304,6 +315,7 @@
 				GCC_PREFIX_HEADER = "baseProject/baseProject-Prefix.pch";
 				INFOPLIST_FILE = "baseProject/baseProject-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "371F3BC8-D020-4A28-B646-B15DD8E013D6";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
