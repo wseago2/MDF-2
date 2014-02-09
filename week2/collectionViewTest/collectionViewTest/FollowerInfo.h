@@ -9,5 +9,17 @@
 #import <Foundation/Foundation.h>
 
 @interface FollowerInfo : NSObject
+{
+    // data here
+    NSString *theName;
+    UIImage *theImage;
+}
+
+// properties here
+@property (nonatomic, strong) NSString *theName;
+@property (nonatomic, strong) UIImage *theImage;
+
+// method here
+-(id)initWithTitle:(NSString *)users images:(UIImage *)avatarImage;
 
 @end

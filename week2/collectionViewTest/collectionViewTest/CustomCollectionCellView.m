@@ -10,6 +10,9 @@
 
 @implementation CustomCollectionCellView
 
+@synthesize title;
+@synthesize backgroundImageView;
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -28,10 +31,10 @@
 }
 */
 
--(void)refreshCellData:(UIImage*)image titleString:(NSString*)titleString
+-(void)refreshCellData:(UIImage *)image titleString:(NSString *)userNames
 {
     backgroundImageView.image = image;
-    title.text = titleString;
+    title.text = userNames;
 }
 
 @end

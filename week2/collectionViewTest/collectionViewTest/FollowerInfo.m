@@ -7,7 +7,24 @@
 //
 
 #import "FollowerInfo.h"
+#import "ViewController.h"
+#import "CustomCollectionCellView.h"
+
 
 @implementation FollowerInfo
+
+// synthesize variables
+@synthesize theName, theImage;
+
+// singleton method here
+-(id)initWithTitle:(NSString *)users images:(UIImage *)avatarImage
+{
+    if (self = [super init])
+    {
+        theName = users;
+        theImage = avatarImage;
+    }
+    return self;
+}
 
 @end

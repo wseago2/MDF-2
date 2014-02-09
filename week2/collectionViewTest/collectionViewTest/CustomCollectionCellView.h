@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FollowerInfo.h"
+
 
 @interface CustomCollectionCellView : UICollectionViewCell
 {
@@ -15,5 +17,9 @@
 }
 
 -(void)refreshCellData:(UIImage*)image titleString:(NSString*)titleString;
+
+@property FollowerInfo *thisUser;
+@property (nonatomic, strong) UILabel *title;
+@property (nonatomic, strong) UIImageView *backgroundImageView;
 
 @end

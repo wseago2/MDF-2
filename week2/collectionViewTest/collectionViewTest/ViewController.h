@@ -11,12 +11,19 @@
 @interface ViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 {
     IBOutlet UICollectionView *theCollectionView;
+    
+    NSDictionary *tweetDictionary;
+    NSArray *users;
+    NSMutableArray *nameArray;
+    NSString *userName;
+    UIImage *userAvatar;
 }
 
--(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section;
-
--(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath;
-
--(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView;
+@property (nonatomic, strong) NSMutableArray *userData;
+@property (nonatomic, strong) NSString *userName;
+@property (nonatomic, strong) UIImage *userAvatar;
+@property (nonatomic, strong) NSMutableArray *nameArray;
+@property (nonatomic, strong) NSMutableArray *imageArray;
+@property (nonatomic, strong) NSString *theName;
 
 @end

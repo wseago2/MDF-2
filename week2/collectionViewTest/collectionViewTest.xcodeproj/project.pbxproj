@@ -24,6 +24,9 @@
 		3F9CDC951850D14F009F4C84 /* CustomCollectionCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F9CDC941850D14F009F4C84 /* CustomCollectionCellView.xib */; };
 		3F9CDC981850D21A009F4C84 /* CustomCollectionCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9CDC971850D21A009F4C84 /* CustomCollectionCellView.m */; };
 		3F9CDC9A1850DD3D009F4C84 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9CDC991850DD3D009F4C84 /* placeholder.png */; };
+		3F9CDC9C1850E056009F4C84 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9CDC9B1850E056009F4C84 /* Accounts.framework */; };
+		3F9CDC9E1850E061009F4C84 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9CDC9D1850E061009F4C84 /* Social.framework */; };
+		3F9CDCA11851195A009F4C84 /* FollowerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9CDCA01851195A009F4C84 /* FollowerInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,10 @@
 		3F9CDC961850D21A009F4C84 /* CustomCollectionCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCollectionCellView.h; sourceTree = "<group>"; };
 		3F9CDC971850D21A009F4C84 /* CustomCollectionCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionCellView.m; sourceTree = "<group>"; };
 		3F9CDC991850DD3D009F4C84 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		3F9CDC9B1850E056009F4C84 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		3F9CDC9D1850E061009F4C84 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		3F9CDC9F1851195A009F4C84 /* FollowerInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowerInfo.h; sourceTree = "<group>"; };
+		3F9CDCA01851195A009F4C84 /* FollowerInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowerInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F9CDC9E1850E061009F4C84 /* Social.framework in Frameworks */,
+				3F9CDC9C1850E056009F4C84 /* Accounts.framework in Frameworks */,
 				3F9CDC621850C73F009F4C84 /* CoreGraphics.framework in Frameworks */,
 				3F9CDC641850C73F009F4C84 /* UIKit.framework in Frameworks */,
 				3F9CDC601850C73F009F4C84 /* Foundation.framework in Frameworks */,
@@ -108,6 +117,8 @@
 		3F9CDC5E1850C73F009F4C84 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3F9CDC9D1850E061009F4C84 /* Social.framework */,
+				3F9CDC9B1850E056009F4C84 /* Accounts.framework */,
 				3F9CDC5F1850C73F009F4C84 /* Foundation.framework */,
 				3F9CDC611850C73F009F4C84 /* CoreGraphics.framework */,
 				3F9CDC631850C73F009F4C84 /* UIKit.framework */,
@@ -130,6 +141,8 @@
 				3F9CDC941850D14F009F4C84 /* CustomCollectionCellView.xib */,
 				3F9CDC961850D21A009F4C84 /* CustomCollectionCellView.h */,
 				3F9CDC971850D21A009F4C84 /* CustomCollectionCellView.m */,
+				3F9CDC9F1851195A009F4C84 /* FollowerInfo.h */,
+				3F9CDCA01851195A009F4C84 /* FollowerInfo.m */,
 			);
 			path = collectionViewTest;
 			sourceTree = "<group>";
@@ -263,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F9CDC761850C73F009F4C84 /* ViewController.m in Sources */,
+				3F9CDCA11851195A009F4C84 /* FollowerInfo.m in Sources */,
 				3F9CDC701850C73F009F4C84 /* AppDelegate.m in Sources */,
 				3F9CDC6C1850C73F009F4C84 /* main.m in Sources */,
 				3F9CDC981850D21A009F4C84 /* CustomCollectionCellView.m in Sources */,
