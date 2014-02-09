@@ -21,6 +21,10 @@
 		3FAFBDB218A148240058AFEF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FAFBD9418A148240058AFEF /* UIKit.framework */; };
 		3FAFBDBA18A148240058AFEF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FAFBDB818A148240058AFEF /* InfoPlist.strings */; };
 		3FAFBDBC18A148240058AFEF /* twitterTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAFBDBB18A148240058AFEF /* twitterTestTests.m */; };
+		3FAFBDC618A148720058AFEF /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FAFBDC518A148720058AFEF /* Accounts.framework */; };
+		3FAFBDC918A157380058AFEF /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FAFBDC818A157380058AFEF /* Social.framework */; };
+		3FAFBDCF18A183650058AFEF /* TwitterCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAFBDCE18A183650058AFEF /* TwitterCellView.m */; };
+		3FAFBDD318A183F80058AFEF /* TwitterCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FAFBDD218A183F80058AFEF /* TwitterCellView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,11 @@
 		3FAFBDB718A148240058AFEF /* twitterTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "twitterTestTests-Info.plist"; sourceTree = "<group>"; };
 		3FAFBDB918A148240058AFEF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3FAFBDBB18A148240058AFEF /* twitterTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = twitterTestTests.m; sourceTree = "<group>"; };
+		3FAFBDC518A148720058AFEF /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		3FAFBDC818A157380058AFEF /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		3FAFBDCD18A183650058AFEF /* TwitterCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterCellView.h; sourceTree = "<group>"; };
+		3FAFBDCE18A183650058AFEF /* TwitterCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterCellView.m; sourceTree = "<group>"; };
+		3FAFBDD218A183F80058AFEF /* TwitterCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwitterCellView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FAFBDC918A157380058AFEF /* Social.framework in Frameworks */,
+				3FAFBDC618A148720058AFEF /* Accounts.framework in Frameworks */,
 				3FAFBD9318A148240058AFEF /* CoreGraphics.framework in Frameworks */,
 				3FAFBD9518A148240058AFEF /* UIKit.framework in Frameworks */,
 				3FAFBD9118A148240058AFEF /* Foundation.framework in Frameworks */,
@@ -101,6 +112,8 @@
 		3FAFBD8F18A148240058AFEF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3FAFBDC818A157380058AFEF /* Social.framework */,
+				3FAFBDC518A148720058AFEF /* Accounts.framework */,
 				3FAFBD9018A148240058AFEF /* Foundation.framework */,
 				3FAFBD9218A148240058AFEF /* CoreGraphics.framework */,
 				3FAFBD9418A148240058AFEF /* UIKit.framework */,
@@ -119,6 +132,9 @@
 				3FAFBDA618A148240058AFEF /* ViewController.m */,
 				3FAFBDA818A148240058AFEF /* Images.xcassets */,
 				3FAFBD9718A148240058AFEF /* Supporting Files */,
+				3FAFBDCD18A183650058AFEF /* TwitterCellView.h */,
+				3FAFBDCE18A183650058AFEF /* TwitterCellView.m */,
+				3FAFBDD218A183F80058AFEF /* TwitterCellView.xib */,
 			);
 			path = twitterTest;
 			sourceTree = "<group>";
@@ -230,6 +246,7 @@
 			files = (
 				3FAFBDA918A148240058AFEF /* Images.xcassets in Resources */,
 				3FAFBD9B18A148240058AFEF /* InfoPlist.strings in Resources */,
+				3FAFBDD318A183F80058AFEF /* TwitterCellView.xib in Resources */,
 				3FAFBDA418A148240058AFEF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,6 +268,7 @@
 			files = (
 				3FAFBDA718A148240058AFEF /* ViewController.m in Sources */,
 				3FAFBDA118A148240058AFEF /* AppDelegate.m in Sources */,
+				3FAFBDCF18A183650058AFEF /* TwitterCellView.m in Sources */,
 				3FAFBD9D18A148240058AFEF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

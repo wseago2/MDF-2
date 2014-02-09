@@ -9,5 +9,15 @@
 #import <UIKit/UIKit.h>
 
 @interface UserDetailsViewController : UIViewController
+{
+    IBOutlet UILabel *detailUser;
+    IBOutlet UILabel *detailDescription;
+    IBOutlet UILabel *detailFollowers;
+    IBOutlet UILabel *detailFriends;
+}
+
+-(IBAction)onDone:(id)sender;
+
+@property (nonatomic, strong) NSDictionary *tweetDictionary;
 
 @end

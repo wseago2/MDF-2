@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface TwitterCellView : UITableViewCell
+{
+    IBOutlet UILabel *twitterText;
+    IBOutlet UILabel *twitterUsername;
+}
 
 @end

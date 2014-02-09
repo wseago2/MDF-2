@@ -9,5 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface DetailViewController : UIViewController
+{
+    IBOutlet UILabel *tweetText;
+    IBOutlet UILabel *tweetDateTime;
+    IBOutlet UILabel *tweetUser;
+}
+
+-(IBAction)onDone:(id)sender;
+
+@property (nonatomic, strong) NSDictionary *tweetDictionary;
 
 @end
