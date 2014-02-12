@@ -24,6 +24,10 @@
 		3F21635318A8314A005D7BC3 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F21635218A8314A005D7BC3 /* Social.framework */; };
 		3F21635518A83151005D7BC3 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F21635418A83151005D7BC3 /* Accounts.framework */; };
 		3F21635818A92A07005D7BC3 /* FollowerData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F21635718A92A07005D7BC3 /* FollowerData.m */; };
+		3F21635A18A93ABC005D7BC3 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F21635918A93ABC005D7BC3 /* placeholder.png */; };
+		3F21636518A96169005D7BC3 /* myCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F21636418A96169005D7BC3 /* myCollectionCell.m */; };
+		3F21637B18A98DD2005D7BC3 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F21637918A98DD2005D7BC3 /* DetailViewController.m */; };
+		3F21637C18A98DD2005D7BC3 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F21637A18A98DD2005D7BC3 /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,12 @@
 		3F21635418A83151005D7BC3 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		3F21635618A92A07005D7BC3 /* FollowerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowerData.h; sourceTree = "<group>"; };
 		3F21635718A92A07005D7BC3 /* FollowerData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowerData.m; sourceTree = "<group>"; };
+		3F21635918A93ABC005D7BC3 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = placeholder.png; path = ../../../../../placeholder.png; sourceTree = "<group>"; };
+		3F21636318A96169005D7BC3 /* myCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myCollectionCell.h; sourceTree = "<group>"; };
+		3F21636418A96169005D7BC3 /* myCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myCollectionCell.m; sourceTree = "<group>"; };
+		3F21637818A98DD2005D7BC3 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		3F21637918A98DD2005D7BC3 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		3F21637A18A98DD2005D7BC3 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +133,7 @@
 		3F21632318A830F8005D7BC3 /* ProjectTwo */ = {
 			isa = PBXGroup;
 			children = (
+				3F21635918A93ABC005D7BC3 /* placeholder.png */,
 				3F21632C18A830F8005D7BC3 /* AppDelegate.h */,
 				3F21632D18A830F8005D7BC3 /* AppDelegate.m */,
 				3F21632F18A830F8005D7BC3 /* Main.storyboard */,
@@ -132,6 +143,11 @@
 				3F21632418A830F8005D7BC3 /* Supporting Files */,
 				3F21635618A92A07005D7BC3 /* FollowerData.h */,
 				3F21635718A92A07005D7BC3 /* FollowerData.m */,
+				3F21636318A96169005D7BC3 /* myCollectionCell.h */,
+				3F21636418A96169005D7BC3 /* myCollectionCell.m */,
+				3F21637818A98DD2005D7BC3 /* DetailViewController.h */,
+				3F21637918A98DD2005D7BC3 /* DetailViewController.m */,
+				3F21637A18A98DD2005D7BC3 /* DetailViewController.xib */,
 			);
 			path = ProjectTwo;
 			sourceTree = "<group>";
@@ -242,6 +258,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F21633618A830F8005D7BC3 /* Images.xcassets in Resources */,
+				3F21635A18A93ABC005D7BC3 /* placeholder.png in Resources */,
+				3F21637C18A98DD2005D7BC3 /* DetailViewController.xib in Resources */,
 				3F21632818A830F8005D7BC3 /* InfoPlist.strings in Resources */,
 				3F21633118A830F8005D7BC3 /* Main.storyboard in Resources */,
 			);
@@ -263,9 +281,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F21633418A830F8005D7BC3 /* ViewController.m in Sources */,
+				3F21636518A96169005D7BC3 /* myCollectionCell.m in Sources */,
 				3F21635818A92A07005D7BC3 /* FollowerData.m in Sources */,
 				3F21632E18A830F8005D7BC3 /* AppDelegate.m in Sources */,
 				3F21632A18A830F8005D7BC3 /* main.m in Sources */,
+				3F21637B18A98DD2005D7BC3 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

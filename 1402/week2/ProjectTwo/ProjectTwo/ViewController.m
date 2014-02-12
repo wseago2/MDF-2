@@ -10,6 +10,8 @@
 #import <Accounts/Accounts.h>
 #import <Social/Social.h>
 #import "FollowerData.h"
+#import "myCollectionCell.h"
+#import "DetailViewController.h"
 
 @interface ViewController ()
 
@@ -19,9 +21,12 @@
 
 @synthesize twitterFeed;
 @synthesize followersData;
+@synthesize currentFollower;
 
 - (void)viewDidLoad
 {
+    // register detailViewController Nib
+    
     // create account store
     ACAccountStore *accountStore = [[ACAccountStore alloc] init];
     if (accountStore != nil)
@@ -65,6 +70,7 @@
                                              //NSLog(@"%@",twitterFeed);
                                              
                                              // refresh collection view here
+                                             [myCollectionView reloadData];
                                              
                                              // put user data into an array
                                              followersArray = [twitterFeed objectForKey:@"users"];
@@ -98,6 +104,10 @@
                                              }
                                          }
                                      }
+                                     else
+                                     {
+                                         NSLog(@"This device is not connected to the internet.");
+                                     }
                                  }];
                             }
                         }
@@ -123,5 +133,52 @@
 
 #pragma collectionView methods
 
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return 20;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    myCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"myCell" forIndexPath:indexPath];
+    if (cell != nil)
+    {
+        FollowerData *details = [followersData objectAtIndex:indexPath.row];
+        NSString *thisLabel = details.followerNames;
+        UIImage *thisImage = details.followerIcons;
+        [cell resetWithLabel:thisLabel cellImage:thisImage];
+//        NSLog(@"%@", thisLabel);
+    }
+    
+    return cell;
+}
+
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
+{
+    return 1;
+}
+
+#pragma collectionView delegate methods
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    DetailViewController *viewController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
+    if (viewController != nil)
+    {
+        // grab current record and put in dictionary
+        currentFollower = [followersData objectAtIndex:indexPath.row];
+        
+        viewController.sharedDetail = currentFollower;
+        
+        
+        
+        [self presentViewController:viewController animated:YES completion:nil];
+    }
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+
+}
 
 @end
