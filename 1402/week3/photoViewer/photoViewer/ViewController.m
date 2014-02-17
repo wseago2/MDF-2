@@ -25,7 +25,9 @@
     UIImagePickerController *pickerController = [[UIImagePickerController alloc] init];
     if (pickerController != nil)
     {
-        pickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        // pickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        
+        pickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
         
         pickerController.delegate = self;
         
