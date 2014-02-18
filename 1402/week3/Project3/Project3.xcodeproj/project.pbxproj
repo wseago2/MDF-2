@@ -24,6 +24,12 @@
 		3F6F165718B26E65008AB438 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F6F165618B26E65008AB438 /* camera.png */; };
 		3F6F165918B26E74008AB438 /* album.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F6F165818B26E74008AB438 /* album.png */; };
 		3F6F165B18B26E7E008AB438 /* video.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F6F165A18B26E7E008AB438 /* video.png */; };
+		3F6F166E18B28039008AB438 /* pictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6F166C18B28039008AB438 /* pictureViewController.m */; };
+		3F6F166F18B28039008AB438 /* pictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F6F166D18B28039008AB438 /* pictureViewController.xib */; };
+		3F6F167318B28048008AB438 /* videoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6F167118B28048008AB438 /* videoViewController.m */; };
+		3F6F167418B28048008AB438 /* videoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F6F167218B28048008AB438 /* videoViewController.xib */; };
+		3F6F167618B281FC008AB438 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6F167518B281FC008AB438 /* MobileCoreServices.framework */; };
+		3F6F167A18B2B772008AB438 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6F167918B2B772008AB438 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +65,16 @@
 		3F6F165618B26E65008AB438 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
 		3F6F165818B26E74008AB438 /* album.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = album.png; sourceTree = "<group>"; };
 		3F6F165A18B26E7E008AB438 /* video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = video.png; sourceTree = "<group>"; };
+		3F6F166B18B28039008AB438 /* pictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pictureViewController.h; sourceTree = "<group>"; };
+		3F6F166C18B28039008AB438 /* pictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pictureViewController.m; sourceTree = "<group>"; };
+		3F6F166D18B28039008AB438 /* pictureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = pictureViewController.xib; sourceTree = "<group>"; };
+		3F6F167018B28048008AB438 /* videoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = videoViewController.h; sourceTree = "<group>"; };
+		3F6F167118B28048008AB438 /* videoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = videoViewController.m; sourceTree = "<group>"; };
+		3F6F167218B28048008AB438 /* videoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = videoViewController.xib; sourceTree = "<group>"; };
+		3F6F167518B281FC008AB438 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		3F6F167718B2B64A008AB438 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		3F6F167918B2B772008AB438 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3F6F167B18B2B77E008AB438 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F6F167A18B2B772008AB438 /* AVFoundation.framework in Frameworks */,
+				3F6F167618B281FC008AB438 /* MobileCoreServices.framework in Frameworks */,
 				3F6F162418B26E29008AB438 /* CoreGraphics.framework in Frameworks */,
 				3F6F162618B26E29008AB438 /* UIKit.framework in Frameworks */,
 				3F6F162218B26E29008AB438 /* Foundation.framework in Frameworks */,
@@ -107,6 +125,10 @@
 		3F6F162018B26E29008AB438 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3F6F167B18B2B77E008AB438 /* CoreMedia.framework */,
+				3F6F167918B2B772008AB438 /* AVFoundation.framework */,
+				3F6F167718B2B64A008AB438 /* MediaPlayer.framework */,
+				3F6F167518B281FC008AB438 /* MobileCoreServices.framework */,
 				3F6F162118B26E29008AB438 /* Foundation.framework */,
 				3F6F162318B26E29008AB438 /* CoreGraphics.framework */,
 				3F6F162518B26E29008AB438 /* UIKit.framework */,
@@ -128,6 +150,12 @@
 				3F6F165818B26E74008AB438 /* album.png */,
 				3F6F165618B26E65008AB438 /* camera.png */,
 				3F6F162818B26E29008AB438 /* Supporting Files */,
+				3F6F166B18B28039008AB438 /* pictureViewController.h */,
+				3F6F166C18B28039008AB438 /* pictureViewController.m */,
+				3F6F166D18B28039008AB438 /* pictureViewController.xib */,
+				3F6F167018B28048008AB438 /* videoViewController.h */,
+				3F6F167118B28048008AB438 /* videoViewController.m */,
+				3F6F167218B28048008AB438 /* videoViewController.xib */,
 			);
 			path = Project3;
 			sourceTree = "<group>";
@@ -240,8 +268,10 @@
 				3F6F163A18B26E29008AB438 /* Images.xcassets in Resources */,
 				3F6F165B18B26E7E008AB438 /* video.png in Resources */,
 				3F6F162C18B26E29008AB438 /* InfoPlist.strings in Resources */,
+				3F6F166F18B28039008AB438 /* pictureViewController.xib in Resources */,
 				3F6F165718B26E65008AB438 /* camera.png in Resources */,
 				3F6F163518B26E29008AB438 /* Main.storyboard in Resources */,
+				3F6F167418B28048008AB438 /* videoViewController.xib in Resources */,
 				3F6F165918B26E74008AB438 /* album.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,7 +292,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F6F163818B26E29008AB438 /* ViewController.m in Sources */,
+				3F6F166E18B28039008AB438 /* pictureViewController.m in Sources */,
 				3F6F163218B26E29008AB438 /* AppDelegate.m in Sources */,
+				3F6F167318B28048008AB438 /* videoViewController.m in Sources */,
 				3F6F162E18B26E29008AB438 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
