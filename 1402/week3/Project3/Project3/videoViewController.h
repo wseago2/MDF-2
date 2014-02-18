@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface videoViewController : UIViewController
+@interface videoViewController : UIViewController <UIAlertViewDelegate>
+{
+    NSString *moviePath;
+}
+
+-(IBAction)onSave:(id)sender;
+-(IBAction)onCancel:(id)sender;
+
+@property (nonatomic, strong)NSString *moviePath;
 
 @end

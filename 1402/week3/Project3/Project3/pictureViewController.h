@@ -8,6 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface pictureViewController : UIViewController
+@interface pictureViewController : UIViewController <UIAlertViewDelegate>
+{
+    NSDictionary *imageData;
+    
+    IBOutlet UIImageView *photoImageView;
+    IBOutlet UIImageView *scaledImageView;
+}
+
+@property (nonatomic, strong)NSDictionary *imageData;
+
+-(IBAction)onSave:(id)sender;
+-(IBAction)onCancel:(id)sender;
 
 @end

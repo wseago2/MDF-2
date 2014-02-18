@@ -5,6 +5,7 @@
 //  Created by Wesley Seago on 2/9/14.
 //  Copyright (c) 2014 Wesley Seago. All rights reserved.
 //
+// Slik.wav from RayWenderlich.com used with permission
 
 #import "ViewController.h"
 #import <Accounts/Accounts.h>
@@ -25,8 +26,6 @@
 
 - (void)viewDidLoad
 {
-    // register detailViewController Nib
-    
     // create account store
     ACAccountStore *accountStore = [[ACAccountStore alloc] init];
     if (accountStore != nil)
@@ -167,10 +166,7 @@
     {
         // grab current record and put in dictionary
         currentFollower = [followersData objectAtIndex:indexPath.row];
-        
         viewController.sharedDetail = currentFollower;
-        
-        
         
         [self presentViewController:viewController animated:YES completion:nil];
     }

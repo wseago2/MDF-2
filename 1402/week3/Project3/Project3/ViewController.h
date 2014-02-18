@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+{
+    
+}
+
+-(IBAction)onPicture:(id)sender;
+-(IBAction)onVideo:(id)sender;
+-(IBAction)onAlbum:(id)sender;
 
 @end

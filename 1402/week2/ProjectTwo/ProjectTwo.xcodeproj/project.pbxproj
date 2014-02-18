@@ -498,6 +498,7 @@
 				3F21634E18A830F8005D7BC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F21634F18A830F8005D7BC3 /* Build configuration list for PBXNativeTarget "ProjectTwoTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +507,7 @@
 				3F21635118A830F8005D7BC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

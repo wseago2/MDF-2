@@ -15,7 +15,6 @@
     NSArray *followersArray;
     NSMutableArray *followersData;
     IBOutlet UICollectionView *myCollectionView;
-    
 }
 
 // assign accountStore to a property to keep it alive
