@@ -72,12 +72,12 @@
     {
         [self dismissViewControllerAnimated:YES completion:^{
     
-        // handle camera first
-        pictureViewController *pictureView = [[pictureViewController alloc] initWithNibName:@"pictureViewController" bundle:nil];
-        
+        // handle camera first        
         UIImage *selectedImage = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
         if (selectedImage != nil)
         {
+            pictureViewController *pictureView = [[pictureViewController alloc] initWithNibName:@"pictureViewController" bundle:nil];
+            
             // pass data to pictureView
             pictureView.imageData = info;
             
@@ -87,16 +87,16 @@
         }
         
         // handle video next
-        [self dismissViewControllerAnimated:YES completion:nil];
-        
         videoViewController *videoView = [[videoViewController alloc] initWithNibName:@"videoViewController" bundle:nil];
         
         NSURL *urlString = [info valueForKey:UIImagePickerControllerMediaURL];
-        NSString *videoPath = [urlString path];
-        videoView.moviePath = videoPath;
+        if (urlString != nil)
+        {
+            NSString *videoPath = [urlString path];
+            videoView.moviePath = videoPath;
             
-        [self presentViewController:videoView animated:YES completion:nil];
-            
+            [self presentViewController:videoView animated:YES completion:nil];
+        }
     }];
     }
 }
