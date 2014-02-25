@@ -10,6 +10,10 @@
 
 @implementation CustomHeader
 
+@synthesize theaterName;
+@synthesize theaterLocation;
+@synthesize theaterImage;
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];

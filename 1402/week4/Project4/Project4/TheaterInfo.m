@@ -10,4 +10,21 @@
 
 @implementation TheaterInfo
 
+@synthesize theaterName;
+@synthesize theaterLocation;
+@synthesize theaterImage;
+
+-(id)initWithTitle:(NSString *)TheaterName location:(NSString *)TheaterLocation image:(UIImage *)TheaterImage movies:(NSArray *)TheaterMovies
+{
+    if ((self = [super init]))
+    {
+        theaterName = TheaterName;
+        theaterLocation = TheaterLocation;
+        theaterImage = TheaterImage;
+        theaterMovies = TheaterMovies;
+    }
+    
+    return self;
+}
+
 @end

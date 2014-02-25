@@ -10,6 +10,8 @@
 
 @implementation CustomTableCell
 
+@synthesize MovieTitle, Time1, Time2, Time3;
+
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
@@ -24,6 +26,14 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+-(void)refreshCell
+{
+    thisMovieTitle.text = MovieTitle;
+    thisTime1.text = Time1;
+    thisTime2.text = Time2;
+    thisTime3.text = Time3;
 }
 
 @end
