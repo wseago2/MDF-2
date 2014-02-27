@@ -13,7 +13,6 @@
 @interface MovieViewController : UIViewController
 {
     IBOutlet UILabel *thisMovieTitle;
-    IBOutlet UIImageView *thisImage;
     IBOutlet UIView *trailerView;
     
     MPMoviePlayerController *moviePlayer;
@@ -25,6 +24,5 @@
 
 @property (nonatomic, strong) MovieInfo *movieDetailData;
 @property (nonatomic, strong) NSString *MovieTitle;
-//@property (nonatomic, strong) MPMoviePlayerController *moviePlayer;
 
 @end

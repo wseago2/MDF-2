@@ -29,8 +29,14 @@
 		3FD435A118BB83C200FCF763 /* TheaterInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD435A018BB83C200FCF763 /* TheaterInfo.m */; };
 		3FD435A418BB843300FCF763 /* CustomTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD435A318BB843300FCF763 /* CustomTableCell.m */; };
 		3FD435A618BB84CA00FCF763 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FD435A518BB84CA00FCF763 /* CustomTableViewCell.xib */; };
-		3FD435A918BB852200FCF763 /* CustomHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD435A818BB852200FCF763 /* CustomHeader.m */; };
-		3FD435AB18BB853700FCF763 /* CustomHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FD435AA18BB853700FCF763 /* CustomHeaderView.xib */; };
+		3FD435AD18BB968900FCF763 /* CustomHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FD435AC18BB968900FCF763 /* CustomHeader.xib */; };
+		3FD435AF18BBA0C200FCF763 /* amcAltamonte.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FD435AE18BBA0C200FCF763 /* amcAltamonte.jpg */; };
+		3FD435B118BBA1F700FCF763 /* regalWinterParkVillage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FD435B018BBA1F700FCF763 /* regalWinterParkVillage.jpg */; };
+		3FD435B318BBA21300FCF763 /* premierColonialTownCenter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FD435B218BBA21300FCF763 /* premierColonialTownCenter.jpg */; };
+		3FD435B518BC4FAE00FCF763 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD435B418BC4FAE00FCF763 /* MediaPlayer.framework */; };
+		3FD9776318BD8281008BC201 /* carbonFiber.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FD9776218BD8281008BC201 /* carbonFiber.png */; };
+		3FD9776518BD82F7008BC201 /* metal.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FD9776418BD82F7008BC201 /* metal.png */; };
+		3FD9776818BD9EBD008BC201 /* CustomHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD9776718BD9EBC008BC201 /* CustomHeader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,9 +82,15 @@
 		3FD435A218BB843300FCF763 /* CustomTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableCell.h; sourceTree = "<group>"; };
 		3FD435A318BB843300FCF763 /* CustomTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableCell.m; sourceTree = "<group>"; };
 		3FD435A518BB84CA00FCF763 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
-		3FD435A718BB852200FCF763 /* CustomHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomHeader.h; sourceTree = "<group>"; };
-		3FD435A818BB852200FCF763 /* CustomHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomHeader.m; sourceTree = "<group>"; };
-		3FD435AA18BB853700FCF763 /* CustomHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomHeaderView.xib; sourceTree = "<group>"; };
+		3FD435AC18BB968900FCF763 /* CustomHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomHeader.xib; sourceTree = "<group>"; };
+		3FD435AE18BBA0C200FCF763 /* amcAltamonte.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = amcAltamonte.jpg; sourceTree = "<group>"; };
+		3FD435B018BBA1F700FCF763 /* regalWinterParkVillage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = regalWinterParkVillage.jpg; sourceTree = "<group>"; };
+		3FD435B218BBA21300FCF763 /* premierColonialTownCenter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = premierColonialTownCenter.jpg; sourceTree = "<group>"; };
+		3FD435B418BC4FAE00FCF763 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		3FD9776218BD8281008BC201 /* carbonFiber.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carbonFiber.png; sourceTree = "<group>"; };
+		3FD9776418BD82F7008BC201 /* metal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = metal.png; sourceTree = "<group>"; };
+		3FD9776618BD9EBC008BC201 /* CustomHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomHeader.h; path = ../CustomHeader.h; sourceTree = "<group>"; };
+		3FD9776718BD9EBC008BC201 /* CustomHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomHeader.m; path = ../CustomHeader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FD435B518BC4FAE00FCF763 /* MediaPlayer.framework in Frameworks */,
 				3FD4356018BB744000FCF763 /* CoreGraphics.framework in Frameworks */,
 				3FD4356218BB744000FCF763 /* UIKit.framework in Frameworks */,
 				3FD4355E18BB744000FCF763 /* Foundation.framework in Frameworks */,
@@ -108,6 +121,11 @@
 		3FD4355118BB743F00FCF763 = {
 			isa = PBXGroup;
 			children = (
+				3FD9776418BD82F7008BC201 /* metal.png */,
+				3FD9776218BD8281008BC201 /* carbonFiber.png */,
+				3FD435B218BBA21300FCF763 /* premierColonialTownCenter.jpg */,
+				3FD435B018BBA1F700FCF763 /* regalWinterParkVillage.jpg */,
+				3FD435AE18BBA0C200FCF763 /* amcAltamonte.jpg */,
 				3FD4356318BB744000FCF763 /* Project4 */,
 				3FD4358218BB744000FCF763 /* Project4Tests */,
 				3FD4355C18BB744000FCF763 /* Frameworks */,
@@ -127,6 +145,7 @@
 		3FD4355C18BB744000FCF763 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3FD435B418BC4FAE00FCF763 /* MediaPlayer.framework */,
 				3FD4355D18BB744000FCF763 /* Foundation.framework */,
 				3FD4355F18BB744000FCF763 /* CoreGraphics.framework */,
 				3FD4356118BB744000FCF763 /* UIKit.framework */,
@@ -158,9 +177,9 @@
 				3FD435A218BB843300FCF763 /* CustomTableCell.h */,
 				3FD435A318BB843300FCF763 /* CustomTableCell.m */,
 				3FD435A518BB84CA00FCF763 /* CustomTableViewCell.xib */,
-				3FD435A718BB852200FCF763 /* CustomHeader.h */,
-				3FD435A818BB852200FCF763 /* CustomHeader.m */,
-				3FD435AA18BB853700FCF763 /* CustomHeaderView.xib */,
+				3FD9776618BD9EBC008BC201 /* CustomHeader.h */,
+				3FD9776718BD9EBC008BC201 /* CustomHeader.m */,
+				3FD435AC18BB968900FCF763 /* CustomHeader.xib */,
 			);
 			path = Project4;
 			sourceTree = "<group>";
@@ -273,10 +292,15 @@
 				3FD4359618BB837200FCF763 /* MovieDetailViewController.xib in Resources */,
 				3FD4357618BB744000FCF763 /* Images.xcassets in Resources */,
 				3FD435A618BB84CA00FCF763 /* CustomTableViewCell.xib in Resources */,
+				3FD9776518BD82F7008BC201 /* metal.png in Resources */,
+				3FD9776318BD8281008BC201 /* carbonFiber.png in Resources */,
 				3FD4356818BB744000FCF763 /* InfoPlist.strings in Resources */,
+				3FD435B118BBA1F700FCF763 /* regalWinterParkVillage.jpg in Resources */,
+				3FD435AD18BB968900FCF763 /* CustomHeader.xib in Resources */,
+				3FD435B318BBA21300FCF763 /* premierColonialTownCenter.jpg in Resources */,
+				3FD435AF18BBA0C200FCF763 /* amcAltamonte.jpg in Resources */,
 				3FD4359B18BB838900FCF763 /* MovieViewController.xib in Resources */,
 				3FD4357118BB744000FCF763 /* Main.storyboard in Resources */,
-				3FD435AB18BB853700FCF763 /* CustomHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FD435A118BB83C200FCF763 /* TheaterInfo.m in Sources */,
-				3FD435A918BB852200FCF763 /* CustomHeader.m in Sources */,
+				3FD9776818BD9EBD008BC201 /* CustomHeader.m in Sources */,
 				3FD4359518BB837200FCF763 /* MovieDetailViewController.m in Sources */,
 				3FD4359A18BB838900FCF763 /* MovieViewController.m in Sources */,
 				3FD4359E18BB83B200FCF763 /* MovieInfo.m in Sources */,
@@ -516,6 +540,7 @@
 				3FD4358E18BB744000FCF763 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FD4358F18BB744000FCF763 /* Build configuration list for PBXNativeTarget "Project4Tests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +549,7 @@
 				3FD4359118BB744000FCF763 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

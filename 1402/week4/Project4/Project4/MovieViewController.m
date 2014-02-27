@@ -31,13 +31,6 @@
     MovieTitle = movieDetailData.movieTitle;
     thisMovieTitle.text = MovieTitle;
     
-    // set image
-    NSString *movieImage = movieDetailData.image;
-    NSURL *url = [NSURL URLWithString:movieImage];
-    NSData *imageData = [NSData dataWithContentsOfURL:url];
-    UIImage *thisMovieImage = [UIImage imageWithData:imageData];
-    thisImage.Image = thisMovieImage;
-    
     // set movie
     NSURL *trailerUrl = movieDetailData.trailerURL;
     moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:trailerUrl];

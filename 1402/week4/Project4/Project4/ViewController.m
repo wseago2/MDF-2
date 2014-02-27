@@ -9,9 +9,9 @@
 #import "ViewController.h"
 #import "TheaterInfo.h"
 #import "MovieInfo.h"
-#import "CustomHeader.h"
 #import "CustomTableCell.h"
 #import "MovieDetailViewController.h"
+#import "CustomHeader.h"
 
 @interface ViewController ()
 
@@ -19,18 +19,11 @@
 
 @implementation ViewController
 
-
+@synthesize myTableView;
 
 - (void)viewDidLoad
 {
-    // register nib for reuse identifier
-//    UINib *customTableCell = [UINib nibWithNibName:@"CustomTableViewCell" bundle:nil];
-//    if (customTableCell != nil)
-//    {
-//        [myTableview registerNib:customTableCell forCellReuseIdentifier:@"tableCell"];
-//    }
-    
-    // array of theaters
+    // array of theaters to hold final objects
     movieTheaters = [[NSMutableArray alloc] init];
     
     // arrays of movies for each theater
@@ -38,7 +31,7 @@
     moviesTheater2 = [[NSMutableArray alloc] init];
     moviesTheater3 = [[NSMutableArray alloc] init];
     
-    //MovieInfo custom objects
+    //MovieInfo custom objects with images and trailers from iTunes
     MovieInfo *movie1 = [[MovieInfo alloc] initWithTitle:@"3 Days to Kill" showTime1:@"1:20PM" showTime2:@"4:10PM" showTime3:@"7:00PM" trailerUrl:[NSURL URLWithString:@"http://movietrailers.apple.com/movies/independent/3daystokill/3daystokill-tlr1_480p.mov"] image:@"http://trailers.apple.com/trailers/independent/3daystokill/images/thumbnail_16702.jpg"];
     
     MovieInfo *movie2 = [[MovieInfo alloc] initWithTitle:@"In Secret" showTime1:@"1:15PM" showTime2:@"4:05PM" showTime3:@"6:50PM" trailerUrl:[NSURL URLWithString:@"http://movietrailers.apple.com/movies/independent/insecret/insecret-tlr1_480p.mov"] image:@"http://trailers.apple.com/trailers/independent/insecret/images/thumbnail_16282.jpg"];
@@ -127,7 +120,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // register nib for reuse identifier
+    // register nib
         UINib *customTableCell = [UINib nibWithNibName:@"CustomTableViewCell" bundle:nil];
         if (customTableCell != nil)
         {
@@ -203,15 +196,13 @@
         
         return cell;
     }
-    [myTableview reloadData];
+//    [myTableview reloadData];
     
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //[tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
     MovieDetailViewController *movieDetailViewController = [[MovieDetailViewController alloc] initWithNibName:@"MovieDetailViewController" bundle:nil];
     if (movieDetailViewController != nil)
     {
@@ -238,20 +229,35 @@
             
         }
         
-
     [self presentViewController:movieDetailViewController animated:YES completion:nil];
     }
 }
 
+// stackoverflow.com/questions/12556750/using-a-xib-file-for-custom-tableview-section-header
+
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-    UILabel *headerLabel = [[UILabel alloc] initWithFrame:CGRectMake (0.0f, 0.0f, myTableview.frame.size.width, 30.0f)];
-    if (headerLabel != nil)
-    {
-        headerLabel.backgroundColor = [UIColor redColor];
-        headerLabel.text = @"This Theater";
-    }
-    return headerLabel;
+    // create an array for the headers
+    NSArray *customHeaders = [[NSBundle mainBundle]loadNibNamed:@"CustomHeader" owner:self options:nil];
+    
+    // create CustomHeader view
+    CustomHeader *view = (CustomHeader *) [customHeaders objectAtIndex:0];
+    
+    // get the section index for the theater objects
+    TheaterInfo *theaterHeader = [movieTheaters objectAtIndex:section];
+    
+    // create variables for the labels and image
+    NSString *headerName = theaterHeader.theaterName;
+    NSString *headerLocation = theaterHeader.theaterLocation;
+    UIImage *headerImage = theaterHeader.theaterImage;
+    
+    // add the labels and images
+    view.theaterName.text = headerName;
+    view.theaterLocation.text = headerLocation;
+    view.theaterImage.image = headerImage;
+    
+    // return the view
+    return view;
 }
 
 @end
