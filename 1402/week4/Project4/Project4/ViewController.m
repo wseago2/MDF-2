@@ -87,7 +87,7 @@
     // create custom theater objects with movies array
     TheaterInfo *movieTheater1 = [[TheaterInfo alloc] initWithTitle:@"AMC Altamonte Mall" location:@"Altamonte Springs, FL" image:[UIImage imageNamed:@"amcAltamonte.jpg"] movies:moviesTheater1];
     
-    TheaterInfo *movieTheater2 = [[TheaterInfo alloc] initWithTitle:@"Regal Winter Park Village" location:@"Winter Park, FL" image:[UIImage imageNamed:@"regalWinterParkVillage.jpg"] movies:moviesTheater2];
+    TheaterInfo *movieTheater2 = [[TheaterInfo alloc] initWithTitle:@"Regal Winter Park" location:@"Winter Park, FL" image:[UIImage imageNamed:@"regalWinterParkVillage.jpg"] movies:moviesTheater2];
     
     TheaterInfo *movieTheater3 = [[TheaterInfo alloc] initWithTitle:@"Premiere Cinema 16" location:@"Orlando, FL" image:[UIImage imageNamed:@"premierColonialTownCenter.jpg"] movies:moviesTheater3];
     
