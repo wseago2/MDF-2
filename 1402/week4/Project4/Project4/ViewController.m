@@ -46,7 +46,7 @@
     
     MovieInfo *movie7 = [[MovieInfo alloc] initWithTitle:@"About Last Night" showTime1:@"12:40PM" showTime2:@"3:05PM" showTime3:@"5:30PM" trailerUrl:[NSURL URLWithString:@"http://movietrailers.apple.com/movies/sony_pictures/aboutlastnight/aboutlastnight-tlr2_480p.mov"] image:@"http://trailers.apple.com/trailers/sony_pictures/aboutlastnight/images/thumbnail_17303.jpg"];
     
-    MovieInfo *movie8 = [[MovieInfo alloc] initWithTitle:@"The Monuments Man" showTime1:@"12:30PM" showTime2:@"1:45PM" showTime3:@"5:00PM" trailerUrl:[NSURL URLWithString:@"http://movietrailers.apple.com/movies/sony_pictures/monumentsmen/themonumentsmen-unlikelyheroes_480p.mov"] image:@"http://trailers.apple.com/trailers/sony_pictures/themonumentsmen/images/thumbnail_17087.jpg"];
+    MovieInfo *movie8 = [[MovieInfo alloc] initWithTitle:@"The Monuments Men" showTime1:@"12:30PM" showTime2:@"1:45PM" showTime3:@"5:00PM" trailerUrl:[NSURL URLWithString:@"http://movietrailers.apple.com/movies/sony_pictures/monumentsmen/themonumentsmen-unlikelyheroes_480p.mov"] image:@"http://trailers.apple.com/trailers/sony_pictures/themonumentsmen/images/thumbnail_17087.jpg"];
     
     MovieInfo *movie9 = [[MovieInfo alloc] initWithTitle:@"Winter in Wartime" showTime1:@"12:45PM" showTime2:@"3:45PM" showTime3:@"6:45PM" trailerUrl:[NSURL URLWithString:@"http://movietrailers.apple.com/movies/sony/winterinwartime/winterinwartime-tlr1_480p.mov"] image:@"http://trailers.apple.com/trailers/sony/winterinwartime/images/thumbnail_5079.jpg"];
     
